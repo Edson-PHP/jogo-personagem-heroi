@@ -83,7 +83,7 @@ Organize seu código aplicando boas práticas, deixando a classe clara, reutiliz
 
 ---
 
-## 🚀 Desafio Extra (Opcional)
+## 🚀 Desafio Extra (Aplicado)
 
 - Criar múltiplos heróis e armazená-los em um array  
 - Utilizar laço de repetição para executar o método `atacar()` para todos  
