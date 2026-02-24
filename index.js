@@ -6,20 +6,18 @@ class PersonagemHeroi {
     }
 
     ataque() {
-        const ataques = {
-            mago: "magia",
-            guerreiro: "espada",
-            monge: "artes marciais",
-            ninja: "shuriken"
-        };
-
-        for (let classe in ataques) {
-            if (classe === this.tipo) {
-                return ataques[classe];
-            }
+        switch (this.tipo) {
+            case "mago":
+                return "magia";
+            case "guerreiro":
+                return "espada";
+            case "monge":
+                return "artes marciais";
+            case "ninja":
+                return "shuriken";
+            default:
+                return "um ataque desconhecido";
         }
-
-        return "um ataque desconhecido";
     }
 
     atacar() {
