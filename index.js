@@ -8,15 +8,15 @@ class PersonagemHeroi {
     ataque() {
         switch (this.tipo) {
             case "mago":
-                return "magia";
+                return "usou magia";
             case "guerreiro":
-                return "espada";
+                return "usou espada";
             case "monge":
-                return "artes marciais";
+                return "usou artes marciais";
             case "ninja":
-                return "shuriken";
+                return "usou shuriken";
             default:
-                return "um ataque desconhecido";
+                return "usou um ataque desconhecido";
         }
     }
 
@@ -25,12 +25,13 @@ class PersonagemHeroi {
     }
 }
 
-const guerreiro = new PersonagemHeroi("Aragorn", 35, "guerreiro");
-const mago = new PersonagemHeroi("Gandalf", 120, "mago");
-const monge = new PersonagemHeroi("Lee", 28, "monge");
-const ninja = new PersonagemHeroi("Ryu", 22, "ninja");
+const herois = [
+    new PersonagemHeroi("Aragorn", 35, "guerreiro"),
+    new PersonagemHeroi("Gandalf", 120, "mago"),
+    new PersonagemHeroi("Lee", 28, "monge"),
+    new PersonagemHeroi("Ryu", 22, "ninja")
+];
 
-guerreiro.atacar();
-mago.atacar();
-monge.atacar();
-ninja.atacar();
+for (let indice in herois) {
+    herois[indice].atacar();
+}
